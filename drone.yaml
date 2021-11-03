@@ -1,12 +1,14 @@
 kind: pipeline
+
 steps:
 - name: test
   image: node
   commands:
   - npm install
   - npm test
-services:
-- name: database
-  image: mysql
-  ports:
-  - 3306
+  - npm run dist
+
+- name: publish
+  image: plugins/github-release
+  settings:
+    files: dist/*
