@@ -8,3 +8,4 @@ steps:
   memory: 32G
   commands:
   - bash ./env.sh
+  - bash ./buildd.sh
