@@ -1,5 +1,5 @@
 mkdir cr
-cd c4
+cd cr
 mkdir ~/bin
 PATH=~/bin:$PATH
 curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
