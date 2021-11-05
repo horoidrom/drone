@@ -7,4 +7,4 @@ steps:
   cpu: 8
   memory: 32G
   commands:
-  - bash ./setup.sh
+  - bash ./env.sh
